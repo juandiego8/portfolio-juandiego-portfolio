@@ -12,7 +12,7 @@ import { CshbotComponent } from './cshbot/cshbot.component';
 import { CalcService } from '../calc.service';
 import { CshbotService } from '../cshbot.service';
 
-import { JDComponent } from '../jd.component';
+import { JDComponent } from '../jd/jd.component';
 
 
 //import { TheoComponent } from '../theo/theo.component';
@@ -22,10 +22,10 @@ import { JDComponent } from '../jd.component';
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'cshbot', component: CshbotComponent }
-
+    { path: 'cshbot', component: CshbotComponent },
+    { path: 'jd', component: JDComponent}
   ]) ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, AboutComponent, CshbotComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, JDComponent, AboutComponent, CshbotComponent ],
   providers: [CalcService, CshbotService],
   bootstrap:    [ AppComponent ]
 })
